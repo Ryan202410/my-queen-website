@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff9ecf, #ffc3e6);
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.gallery img {
+    width: 220px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(255,0,128,0.4);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+#countdown {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.letter {
+    max-width: 500px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Floating hearts */
+.hearts::before {
+    content: "💗 💕 💖 💓 💞 💘";
+    position: fixed;
+    width: 100%;
+    animation: float 10s linear infinite;
+    font-size: 25px;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh); }
+    100% { transform: translateY(-10vh); }
+}
